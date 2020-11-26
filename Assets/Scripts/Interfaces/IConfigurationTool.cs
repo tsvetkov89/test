@@ -4,6 +4,6 @@ namespace Test.Interfaces
 {
     public interface IConfigurationTool
     {
-        GameObject ConfigurateBaseObject(GameObject originalm, GameObject clone);
+        GameObject ConfigurateBaseObject(GameObject clone);
     }
 }

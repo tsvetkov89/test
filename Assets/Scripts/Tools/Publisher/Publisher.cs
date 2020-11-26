@@ -7,7 +7,7 @@ namespace Test.Tools
 {
     public class Publisher: IPublisher
     {
-        #region Privaate Data
+        #region Private Data
 
         private Dictionary<GameEventName, List<ISubscriber>> _dictionarySubscribers;
 
@@ -19,6 +19,7 @@ namespace Test.Tools
         }
 
         #region Public Methods
+        
         public void Publish(CustomEventData messageData)
         {
             var eventName = messageData.Message;

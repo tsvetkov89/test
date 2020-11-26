@@ -109,7 +109,7 @@ namespace Test.Tools
             }
 
             var clone = _objectLoader.Instantiate(prefab);
-            clone = _configurationTool.ConfigurateBaseObject(prefab, clone);
+            clone = _configurationTool.ConfigurateBaseObject(clone);
             clone.transform.localPosition = position;
             var renderer = clone.GetComponent<Renderer>();
             renderer.material.SetColor("_Color", Random.ColorHSV());

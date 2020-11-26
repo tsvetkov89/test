@@ -1,7 +1,6 @@
 ﻿using Test.Data;
 using Test.Interfaces;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class ClickHandler : MonoBehaviour
 {

@@ -22,7 +22,7 @@ namespace Test.Tools
 
         #region Public Methods
 
-        public GameObject ConfigurateBaseObject(GameObject original, GameObject clone)
+        public GameObject ConfigurateBaseObject(GameObject clone)
         {
             clone.transform.parent = _folder;
 
