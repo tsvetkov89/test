@@ -1,0 +1,16 @@
+{
+  "BaseObjects": [
+    {
+      "ObjectType": "Cube"
+    },
+    {
+      "ObjectType": "Capsule"
+    },
+    {
+      "ObjectType": "Cylinder"
+    },
+    {
+      "ObjectType": "Sphere"
+    }
+  ]
+}
