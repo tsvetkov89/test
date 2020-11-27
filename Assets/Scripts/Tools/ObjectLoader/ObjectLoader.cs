@@ -34,9 +34,9 @@ namespace Test.Tools
             return (T) Object.Instantiate((Object) original, parent, false);
         }
 
-        public T[] LoadAllAssets<T>(string assetBundleDirectory, string contentDirectory) where T : Object
+        public T[] LoadAllAssets<T>(string contentDirectory) where T : Object
         {
-            var localAssetBundle = AssetBundle.LoadFromFile(Path.Combine(assetBundleDirectory, contentDirectory));
+            var localAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, contentDirectory));
             if (localAssetBundle == null)
             {
                 Debug.LogError("Failed to load AssetBundle!");

@@ -39,9 +39,10 @@ namespace Test.Tools
 
         private void LoadAssets()
         {
+            
             var assetBundleDirectory = "Assets/AssetBundles";
             var contentDirectory = "content/prefabs";
-            var prefabs = _objectLoader.LoadAllAssets<GameObject>(assetBundleDirectory, contentDirectory).ToList();
+            var prefabs = _objectLoader.LoadAllAssets<GameObject>(contentDirectory).ToList();
             _dictionaryPrefabs = new Dictionary<string, GameObject>();
             for (var i = 0; i < prefabs.Count; i++)
             {
